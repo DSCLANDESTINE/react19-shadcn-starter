@@ -20,7 +20,6 @@ type FormValues = {
 import useLanguageStore from '@/stores/useLanguageStore';
 
 export default function LoginPage() {
-  console.log("s")
   const { t } = useTranslation();
   // const navigate = useNavigate();
   const { mutateAsync } = usePostLogin();
