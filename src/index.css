@@ -1,0 +1,291 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+
+  /* custom */
+  /* custom */
+  /* custom */
+
+  --color-main: var(--color-project-main);
+  --color-onmain: var(--color-project-onmain);
+
+  --color-card: var(--color-project-card);
+  --color-oncard: var(--color-project-oncard);
+
+  --color-modal: var(--color-project-modal);
+  --color-onmodal: var(--color-project-onmodal);
+
+  --color-highlight: var(--color-project-highlight);
+  --color-onhighlight: var(--color-project-onhighlight);
+
+  --color-input: var(--color-project-input);
+  --color-oninput: var(--color-project-oninput);
+
+  --color-placeholder: var(--color-project-placeholder);
+
+  --color-header: var(--color-project-header);
+  --color-onheader: var(--color-project-onheader);
+
+  --color-button-primary: var(--color-project-button-primary);
+  --color-onbutton-primary: var(--color-project-onbutton-primary);
+
+  --color-button-secondary: var(--color-project-button-secondary);
+  --color-onbutton-secondary: var(--color-project-onbutton-secondary);
+
+  --color-button-outline: var(--color-project-button-outline);
+  --color-onbutton-outline: var(--color-project-onbutton-outline);
+  --color-button-outline-border: var(--color-project-button-outline-border);
+
+  --color-button-ghost: var(--color-project-button-ghost);
+  --color-onbutton-ghost: var(--color-project-onbutton-ghost);
+
+  --color-button-danger: var(--color-project-button-danger);
+  --color-onbutton-danger: var(--color-project-onbutton-danger);
+
+  /* Borders (global) */
+  --color-border: var(--color-project-border);
+  /* custom */
+  /* custom */
+  /* custom */
+}
+
+:root {
+  --radius: 0.625rem;
+  --background: oklch(1 0 0);
+  --foreground: oklch(0.145 0 0);
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.145 0 0);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.145 0 0);
+  --primary: oklch(0.205 0 0);
+  --primary-foreground: oklch(0.985 0 0);
+  --secondary: oklch(0.97 0 0);
+  --secondary-foreground: oklch(0.205 0 0);
+  --muted: oklch(0.97 0 0);
+  --muted-foreground: oklch(0.556 0 0);
+  --accent: oklch(0.97 0 0);
+  --accent-foreground: oklch(0.205 0 0);
+  --destructive: oklch(0.577 0.245 27.325);
+  --border: oklch(0.922 0 0);
+  --input: oklch(0.922 0 0);
+  --ring: oklch(0.708 0 0);
+  --chart-1: oklch(0.646 0.222 41.116);
+  --chart-2: oklch(0.6 0.118 184.704);
+  --chart-3: oklch(0.398 0.07 227.392);
+  --chart-4: oklch(0.828 0.189 84.429);
+  --chart-5: oklch(0.769 0.188 70.08);
+  --sidebar: oklch(0.985 0 0);
+  --sidebar-foreground: oklch(0.145 0 0);
+  --sidebar-primary: oklch(0.205 0 0);
+  --sidebar-primary-foreground: oklch(0.985 0 0);
+  --sidebar-accent: oklch(0.97 0 0);
+  --sidebar-accent-foreground: oklch(0.205 0 0);
+  --sidebar-border: oklch(0.922 0 0);
+  --sidebar-ring: oklch(0.708 0 0);
+  /* custom */
+  /* custom */
+  /* custom */
+  /* Main Surface */
+  --color-project-main: rgb(245, 246, 247);
+  --color-project-onmain: rgb(30, 32, 34);
+
+  /* Cards */
+  --color-project-card: rgb(255, 255, 255);
+  --color-project-oncard: rgb(32, 33, 36);
+
+  /* Modal Elevated */
+  --color-project-modal: rgb(252, 252, 253);
+  --color-project-onmodal: rgb(30, 32, 34);
+
+  /* Header (light frosted) */
+  --color-project-header: rgba(255, 255, 255, 0.75);
+  --color-project-onheader: rgb(20, 20, 22);
+
+  /* Inputs */
+  --color-project-input: rgb(255, 255, 255);
+  --color-project-oninput: rgb(30, 32, 34);
+
+  /* Placeholder */
+  --color-project-placeholder: rgba(140, 140, 145, 0.6);
+
+  /* Highlight (modern blurple) */
+  --color-project-highlight: rgb(88, 101, 242);
+  --color-project-onhighlight: rgb(255, 255, 255);
+
+  /* Borders */
+  --color-project-border: rgba(0, 0, 0, 0.12);
+
+  /* -------- BUTTON SYSTEM -------- */
+
+  /* PRIMARY BUTTON */
+  --color-project-button-primary: rgb(88, 101, 242);
+  --color-project-onbutton-primary: rgb(255, 255, 255);
+
+  /* SECONDARY (light neutral button) */
+  --color-project-button-secondary: rgb(235, 236, 240);
+  --color-project-onbutton-secondary: rgb(34, 35, 38);
+
+  /* OUTLINE BUTTON */
+  --color-project-button-outline: transparent;
+  --color-project-onbutton-outline: rgb(30, 32, 34);
+  --color-project-button-outline-border: rgba(0, 0, 0, 0.18);
+
+  /* GHOST / SUBTLE */
+  --color-project-button-ghost: transparent;
+  --color-project-onbutton-ghost: rgb(35, 36, 38);
+
+  /* DESTRUCTIVE */
+  --color-project-button-danger: rgb(240, 71, 71);
+  --color-project-onbutton-danger: rgb(255, 255, 255);
+
+  /* custom */
+  /* custom */
+  /* custom */
+}
+
+.dark {
+  --background: oklch(0.145 0 0);
+  --foreground: oklch(0.985 0 0);
+  --card: oklch(0.205 0 0);
+  --card-foreground: oklch(0.985 0 0);
+  --popover: oklch(0.205 0 0);
+  --popover-foreground: oklch(0.985 0 0);
+  --primary: oklch(0.922 0 0);
+  --primary-foreground: oklch(0.205 0 0);
+  --secondary: oklch(0.269 0 0);
+  --secondary-foreground: oklch(0.985 0 0);
+  --muted: oklch(0.269 0 0);
+  --muted-foreground: oklch(0.708 0 0);
+  --accent: oklch(0.269 0 0);
+  --accent-foreground: oklch(0.985 0 0);
+  --destructive: oklch(0.704 0.191 22.216);
+  --border: oklch(1 0 0 / 10%);
+  --input: oklch(1 0 0 / 15%);
+  --ring: oklch(0.556 0 0);
+  --chart-1: oklch(0.488 0.243 264.376);
+  --chart-2: oklch(0.696 0.17 162.48);
+  --chart-3: oklch(0.769 0.188 70.08);
+  --chart-4: oklch(0.627 0.265 303.9);
+  --chart-5: oklch(0.645 0.246 16.439);
+  --sidebar: oklch(0.205 0 0);
+  --sidebar-foreground: oklch(0.985 0 0);
+  --sidebar-primary: oklch(0.488 0.243 264.376);
+  --sidebar-primary-foreground: oklch(0.985 0 0);
+  --sidebar-accent: oklch(0.269 0 0);
+  --sidebar-accent-foreground: oklch(0.985 0 0);
+  --sidebar-border: oklch(1 0 0 / 10%);
+  --sidebar-ring: oklch(0.556 0 0);
+  /* custom */
+  /* custom */
+  /* custom */
+  /* Main Surface */
+  --color-project-main: rgb(30, 31, 34);
+  --color-project-onmain: rgb(232, 233, 235);
+
+  /* Cards */
+  --color-project-card: rgb(43, 45, 49);
+  --color-project-oncard: rgb(240, 241, 242);
+
+  /* Modal Elevated */
+  --color-project-modal: rgb(47, 49, 54);
+  --color-project-onmodal: rgb(245, 245, 246);
+
+  /* Header (glass-like) */
+  --color-project-header: rgba(47, 49, 54, 0.7);
+  --color-project-onheader: rgb(250, 250, 250);
+
+  /* Inputs */
+  --color-project-input: rgb(62, 64, 68);
+  --color-project-oninput: rgb(235, 236, 238);
+
+  /* Placeholder */
+  --color-project-placeholder: rgba(200, 200, 200, 0.4);
+
+  /* Highlight (modern blurple) */
+  --color-project-highlight: rgb(88, 101, 242);
+  --color-project-onhighlight: rgb(255, 255, 255);
+
+  /* Borders */
+  --color-project-border: rgba(255, 255, 255, 0.08);
+
+  /* -------- BUTTON SYSTEM -------- */
+
+  /* PRIMARY BUTTON — Blurple */
+  --color-project-button-primary: rgb(88, 101, 242);
+  --color-project-onbutton-primary: rgb(255, 255, 255);
+
+  /* SECONDARY BUTTON — Grey Discord style */
+  --color-project-button-secondary: rgb(64, 67, 74);
+  --color-project-onbutton-secondary: rgb(235, 236, 238);
+
+  /* OUTLINE BUTTON */
+  --color-project-button-outline: transparent;
+  --color-project-onbutton-outline: rgb(232, 233, 235);
+  --color-project-button-outline-border: rgba(255, 255, 255, 0.14);
+
+  /* SUBTLE / GHOST BUTTON */
+  --color-project-button-ghost: transparent;
+  --color-project-onbutton-ghost: rgb(232, 233, 235);
+
+  /* DESTRUCTIVE */
+  --color-project-button-danger: rgb(240, 71, 71);
+  --color-project-onbutton-danger: rgb(255, 255, 255);
+  /* custom */
+  /* custom */
+  /* custom */
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}

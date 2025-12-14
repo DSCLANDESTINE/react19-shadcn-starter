@@ -1,0 +1,81 @@
+{
+  "sample": {
+    "test": "سلام دنیا!",
+    "title": "پیش‌نمایش تم",
+    "main": "سطح اصلی",
+    "card": "سطح کارت",
+    "modal": "سطح مودال",
+    "highlight": "رنگ تأکیدی",
+    "input": "فیلد ورودی",
+    "header": "سطح هدر",
+    "buttons": "دکمه‌ها",
+    "success": "موفقیت",
+    "error": "خطا",
+    "warning": "هشدار",
+    "info": "اطلاعات",
+
+    "successDescription": "رنگ سطح و متن موفقیت",
+    "errorDescription": "رنگ سطح و متن خطا",
+    "warningDescription": "رنگ سطح و متن هشدار",
+    "infoDescription": "رنگ سطح و متن اطلاعات",
+
+    "placeholderSection": "ورودی با-placeholder",
+    "placeholder": "چیزی وارد کنید…",
+
+    "headerExample": "نمونه هدر",
+    "headerPreview": "این یک پیش‌نمایش هدر است",
+
+    "buttonPrimary": "دکمه اصلی",
+    "buttonSecondary": "دکمه ثانویه",
+    "buttonDanger": "دکمه خطر",
+    "buttonOutline": "دکمه حاشیه‌دار",
+    "buttonGhost": "دکمه شبحی"
+  },
+  "global": {
+    "errors": {
+      "frequent": {
+        "title": "خطا!",
+        "desc": "مشکلی رخ داده است، لطفاً بعداً دوباره تلاش کنید."
+      }
+    },
+    "username": "نام کاربری",
+    "password": "رمز عبور",
+    "submit": "ارسال"
+  },
+  "login": {
+    "title": "ورود به حساب کاربری",
+    "error": "ورود ناموفق",
+    "captcha_text": "کد امنیتی را وارد کنید",
+    "login_successful": {
+      "title": "موفق!",
+      "desc": "خوش آمدید."
+    },
+    "errors": {
+      "password_required": {
+        "title": "رمز عبور وارد نشده!",
+        "desc": "لطفاً رمز عبور خود را وارد کنید."
+      },
+      "username_required": {
+        "title": "نام کاربری وارد نشده!",
+        "desc": "لطفاً نام کاربری خود را وارد کنید."
+      },
+      "invalid_credntials": {
+        "title": "خطا!",
+        "desc": "نام کاربری یا رمز عبور اشتباه است."
+      },
+      "invalid_captcha": {
+        "title": "خطا!",
+        "desc": "کد کپچا نامعتبر است."
+      },
+      "login_failed": {
+        "title": "خطا!",
+        "desc": "ورود ناموفق بود."
+      }
+    }
+  },
+
+  "header": {
+    "log_out": "خروج از سیستم",
+    "setting": "تنظیمات"
+  }
+}

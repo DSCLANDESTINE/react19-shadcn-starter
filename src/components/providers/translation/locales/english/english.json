@@ -1,0 +1,82 @@
+{
+  "sample": {
+    "test": "Hello World!",
+    "title": "Theme Preview",
+    "main": "Main Surface",
+    "card": "Card Surface",
+    "modal": "Modal Surface",
+    "highlight": "Accent Color",
+    "input": "Input Field",
+    "header": "Header Surface",
+    "buttons": "Buttons",
+
+    "success": "Success",
+    "error": "Error",
+    "warning": "Warning",
+    "info": "Information",
+
+    "successDescription": "Success surface and text colors",
+    "errorDescription": "Error surface and text colors",
+    "warningDescription": "Warning surface and text colors",
+    "infoDescription": "Information surface and text colors",
+
+    "placeholderSection": "Input With Placeholder",
+    "placeholder": "Enter something...",
+
+    "headerExample": "Header Example",
+    "headerPreview": "This is a header preview box",
+
+    "buttonPrimary": "Primary Button",
+    "buttonSecondary": "Secondary Button",
+    "buttonDanger": "Danger Button",
+    "buttonOutline": "Outline Button",
+    "buttonGhost": "Ghost Button"
+  },
+  "login": {
+    "title": "Login to Your Account",
+    "error": "Login failed",
+    "captcha_text": "Enter the security code",
+
+    "login_successful": {
+      "title": "Success!",
+      "desc": "Welcome."
+    },
+    "errors": {
+      "password_required": {
+        "title": "Password omitted!",
+        "desc": "Please enter your password."
+      },
+      "username_required": {
+        "title": "Username omitted!",
+        "desc": "Please enter your username."
+      },
+      "invalid_credentials": {
+        "title": "Error!",
+        "desc": "Incorrect username or password."
+      },
+      "invalid_captcha": {
+        "title": "Error!",
+        "desc": "Invalid captcha."
+      },
+      "login_failed": {
+        "title": "Error!",
+        "desc": "Login failed."
+      }
+    }
+  },
+  "global": {
+    "errors": {
+      "frequent": {
+        "title": "Error!",
+        "desc": "Something went wrong please Try again later."
+      }
+    },
+    "username": "Username",
+    "password": "Password",
+    "submit": "Submit"
+  },
+  "header": {
+    "log_out": "log out from the system",
+    "setting": "settings"
+  }
+}
